@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Dancing+Script:wght@400;600&family=Montserrat:wght@100;200;500;600&family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.3rem 0;
+}
+
+h1 {
+    font-family: 'Dancing Script';
+    font-size: 4em;
+    font-weight: bold;
+}
+
+button {
+    padding: 0.3rem 1rem;
+    font-family: 'Dancing Script';
+    font-size: 2.0em;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--accent);
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+button:hover {
+    background-color: rgb(205, 186, 165, 0.8);
+
+}
+
+.quote-container {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.quote {
+    display: flex;
+    margin: 0 auto 2rem auto;
+    font-family: 'Cutive Mono', monospace;
+}
+
+blockquote {
+    width: 45vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-size: 1.3em;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.author {
+    font-family: 'Dancing Script';
+    font-size: 1.3em;
+    color: rgb(205, 186, 165);
+}
+
+.quotes-char {
+    font-size: 2.5em;
+    color: rgb(205, 186, 165, 0.5);
+}
+
+.quotes-char:last-child {
+    align-self: flex-end;
+}
+
+.divider {
+    width: 25vh;
+    height: 1px;
+    margin: 0.5rem auto;
+    background-color: rgb(230, 222, 212);
+}
+
+
+@media only screen and (max-width: 620px) {
+    blockquote {
+        width: 80vw;
+        flex: 1;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-bottom: 2rem;
+    }
+}
