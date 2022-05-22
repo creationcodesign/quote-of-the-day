@@ -33,20 +33,22 @@ export default function Quote() {
     })
 
     let randomQuote = quoteResult[Math.floor(Math.random() * quoteResult.length)];
-
     let getAnotherQuote = () => {
         setAnotherQuote(quoteResult[Math.floor(Math.random() * quoteResult.length)]);
         return anotherQuote;
     }
 
     return (
-        <div className="quote-container">
-            <blockquote>
-                {randomQuote}
-            </blockquote>
-            <button className="btn-new" onClick={() => getAnotherQuote()}>
-                get new one
-            </button>
-        </div>
+        <>
+            <h1>Quote of the day</h1>
+            <div className="quote-container">
+                <blockquote>
+                    {randomQuote}
+                </blockquote>
+                <button className="btn-new" onClick={() => getAnotherQuote()}>
+                    get new one
+                </button>
+            </div>
+        </>
     )
 }
