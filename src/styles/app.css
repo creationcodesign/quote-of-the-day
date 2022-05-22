@@ -1,33 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Dancing+Script:wght@400;600&family=Montserrat:wght@100;200;500;600&family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Inconsolata&display=swap');
 
-header {
+.app {
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    padding: 2.3rem 0;
+    text-align: center;
 }
 
 h1 {
     font-family: 'Dancing Script';
     font-size: 4em;
     font-weight: bold;
-}
-
-button {
-    padding: 0.3rem 1rem;
-    font-family: 'Dancing Script';
-    font-size: 2.0em;
-    font-weight: bold;
-    border: none;
-    border-radius: 3px;
-    background-color: var(--accent);
-    cursor: pointer;
-    transition: 1s ease;
-}
-
-button:hover {
-    background-color: rgb(205, 186, 165, 0.8);
-
+    text-align: center;
 }
 
 .quote-container {
@@ -42,7 +29,7 @@ button:hover {
 .quote {
     display: flex;
     margin: 0 auto 2rem auto;
-    font-family: 'Cutive Mono', monospace;
+    font-family: 'Inconsolata', monospace;
 }
 
 blockquote {
@@ -74,16 +61,39 @@ blockquote {
 }
 
 .divider {
-    width: 25vh;
+    width: 27vh;
     height: 1px;
     margin: 0.5rem auto;
-    background-color: rgb(230, 222, 212);
+    background-color: rgb(229, 219, 208);
+}
+
+button {
+    margin-top: 2.5rem;
+    padding: 0.3rem 1rem;
+    font-family: 'Dancing Script';
+    font-size: 2.0em;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--accent);
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+button:hover {
+    background-color: rgb(205, 186, 165, 0.8);
+
 }
 
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 920px) {
+    .app {
+        justify-content: flex-start;
+        padding: 2rem 0;
+    }
+
     blockquote {
-        width: 80vw;
+        width: 85vw;
         flex: 1;
     }
 
