@@ -2,7 +2,7 @@
 
 Sample React SPA with fetching data from an API. 
 
-## [get a quote](https://versi-on.github.io/quote-of-the-day/)
+## [get a quote](https://visi-on.github.io/quote-of-the-day/)
 
 <br>
 
