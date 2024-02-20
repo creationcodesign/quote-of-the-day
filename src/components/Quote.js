@@ -20,14 +20,12 @@ export default function Quote() {
         return <div key={quote.index} className="quote-section">
             <div className="quote">
                 <span className='quotes-char'>“</span>
-                <p>
-                    {quote.text}
-                </p>
+                <p> {quote.text}</p>
                 <span className='quotes-char'>”</span>
             </div>
             <p className="author">
                 <div className='divider'> </div>
-                {quote.author}
+                {quote.author.replace(", type.fit", "")}
             </p>
         </div>
     })
