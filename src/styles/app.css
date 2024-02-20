@@ -23,7 +23,6 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
 }
 
 .quote {
@@ -33,22 +32,27 @@ h1 {
 }
 
 blockquote {
-    width: 45vw;
-    height: 50vh;
+    width: 48vw;
+}
+
+.quote-section {
+    padding: 1.5rem 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex: 1;
     font-size: 1.3em;
     text-align: center;
     line-height: 1.5em;
+    background-color: #f8efe7;
+    transition: 1s ease;
 }
 
 .author {
     font-family: 'Dancing Script';
-    font-size: 1.3em;
-    color: rgb(205, 186, 165);
+    font-size: 1.0em;
+    color: #cdbaa5;
 }
 
 .quotes-char {
@@ -68,23 +72,44 @@ blockquote {
 }
 
 button {
-    margin-top: 2.5rem;
-    padding: 0.3rem 1rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
     font-family: 'Dancing Script';
     font-size: 2.0em;
     font-weight: bold;
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
     background-color: var(--accent);
     cursor: pointer;
     transition: 1s ease;
 }
 
 button:hover {
-    background-color: rgb(205, 186, 165, 0.8);
-
+    background-color: #a8e8c8;
 }
 
+.underline-title {
+    background-image: linear-gradient(120deg, #e9d5c0 0%, #ebe3c9 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+}
+
+.underline {
+    background-image: linear-gradient(120deg, #a8e8c8 0%, #b7e9d0 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    transition: 0.5s ease-in;
+}
+
+.underline:hover {
+    background-size: 100% 88%;
+}
+
+::selection {
+    background: var(--accent);
+}
 
 @media only screen and (max-width: 920px) {
     .app {
