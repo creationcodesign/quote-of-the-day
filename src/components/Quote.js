@@ -40,12 +40,12 @@ export default function Quote() {
 
     return (
         <>
-            <h1>Quote of the day</h1>
+            <h1 className='underline-title'>Quote of the day</h1>
             <div className="quote-container">
                 <blockquote>
                     {randomQuote}
                 </blockquote>
-                <button className="btn-new" onClick={() => getAnotherQuote()}>
+                <button className="btn-new underline" onClick={() => getAnotherQuote()}>
                     get new one
                 </button>
             </div>
